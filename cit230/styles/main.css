@@ -24,8 +24,8 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: crimson;
-    color: whitesmoke;
+    background-color: #d03e3e;
+    color: whitesmoke;     
 }
 
 header img {
@@ -37,4 +37,5 @@ header img {
 
 footer {
     font-size: smaller;
-}
+
+     
