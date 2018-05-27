@@ -39,7 +39,19 @@ header .subheading {}
 
 nav {}
 
-nav button {}
+nav button {
+	 background-color: #f1f1f1;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    margin: 2px 2px;
+    cursor: pointer;
+	 transition-duration: 0.5s;
+}
+
+nav button:hover {
+	background-color: #0b8a41;
+}
 
 nav ul {
 	list-style-type: none;
@@ -71,12 +83,14 @@ nav ul li a:hover:not(.active) {
 main {
 	font-family: 'Source Sans Pro', sans-serif;
 	width: 75%;
+	max-width: 900px;
 	margin: 0 auto;
 }
 
 main h2 {
 	font-size: 22pt;
 	text-align: center;
+	margin-bottom: 0px;
 }
 
 main h3 {
@@ -103,8 +117,8 @@ table {
 }
 
 main figure {
-	margin: 0 0 .2rem 2%;
-	width: 96%;
+	text-align: center;
+	font-family: 'Seaweed Script', cursive;
 }
 
 main figure img {}
