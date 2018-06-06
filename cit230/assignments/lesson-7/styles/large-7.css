@@ -8,7 +8,11 @@
 		font-size: 35pt;
 	}
 	
+	nav ul{
+		justify-content: center;
+	}
+	
 	nav ul li{
-		margin: 0% 1%;
+		margin: 0% 2%;
 	}
 }
