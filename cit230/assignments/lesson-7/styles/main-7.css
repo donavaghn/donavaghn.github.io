@@ -27,7 +27,7 @@ header {
 }
 
 header h1 {
-/*	float: left;*/
+	/*	float: left;*/
 }
 
 header img {
@@ -40,13 +40,13 @@ header .subheading {}
 nav {}
 
 nav button {
-	 background-color: #f1f1f1;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    margin: 2px 2px;
-    cursor: pointer;
-	 transition-duration: 0.5s;
+	background-color: #f1f1f1;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	margin: 2px 2px;
+	cursor: pointer;
+	transition-duration: 0.5s;
 }
 
 nav button:hover {
@@ -94,6 +94,7 @@ main {
 }
 
 /* Grid layout for gallery */
+
 div picture img {
 	width: 100%;
 	border-radius: 5px;
@@ -104,7 +105,7 @@ div picture img:hover {
 	opacity: .9;
 }
 
-div picture p {
+div div p {
 	margin: 20px 0px;
 }
 
@@ -159,7 +160,7 @@ footer {
 }
 
 .weather-photo {
-/*	float: right;*/
+	/*	float: right;*/
 	width: 150px;
 	border-radius: 25px;
 }
@@ -179,13 +180,11 @@ footer {
 	margin-bottom: 2px;
 }
 
-.current {
-	
-}
+.current {}
 
 .highlow,
 .conditions {
-/*
+	/*
 	margin: 6px 0px;
 	clear: both;
 */
