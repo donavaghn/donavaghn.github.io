@@ -94,17 +94,17 @@ main {
 }
 
 /* Grid layout for gallery */
-container picture img {
+div picture img {
 	width: 100%;
 	border-radius: 5px;
 }
 
-container picture img:hover {
+div picture img:hover {
 	box-shadow: 5px 5px 10px gray;
 	opacity: .9;
 }
 
-container picture p {
+div picture p {
 	margin: 20px 0px;
 }
 
