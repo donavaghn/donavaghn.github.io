@@ -27,7 +27,7 @@ header {
 }
 
 header h1 {
-	float: left;
+/*	float: left;*/
 }
 
 header img {
@@ -93,6 +93,29 @@ main {
 	margin: 0 auto;
 }
 
+/* Grid layout for gallery */
+container picture img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+container picture img:hover {
+	box-shadow: 5px 5px 10px gray;
+	opacity: .9;
+}
+
+container picture p {
+	margin: 20px 0px;
+}
+
+.gallery-display {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 10px;
+}
+
+
 main h2 {
 	font-size: 22pt;
 	text-align: center;
@@ -136,9 +159,15 @@ footer {
 }
 
 .weather-photo {
-	float: right;
+/*	float: right;*/
 	width: 150px;
 	border-radius: 25px;
+}
+
+.weather-summary {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .franklin-img {
@@ -151,13 +180,15 @@ footer {
 }
 
 .current {
-	float: left;
+	
 }
 
 .highlow,
 .conditions {
+/*
 	margin: 6px 0px;
 	clear: both;
+*/
 }
 
 .contact,

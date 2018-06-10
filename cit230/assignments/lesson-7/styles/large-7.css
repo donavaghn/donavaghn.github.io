@@ -7,12 +7,17 @@
 	.headertitle {
 		font-size: 35pt;
 	}
-	
-	nav ul{
+
+	nav ul {
 		justify-content: center;
 	}
-	
-	nav ul li{
+
+	nav ul li {
 		margin: 0% 2%;
+	}
+
+	/*	Grid layout for gallery */
+	.gallery-display {
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }

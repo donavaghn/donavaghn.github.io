@@ -18,13 +18,19 @@
 	
 	nav ul li {}
 	nav ul li a {
-		/*float: left;*/
+	}
+	
+	/* Grid layout for Gallery */
+	.gallery-display {
+		grid-template-columns: 1fr 1fr;
 	}
 	
 	.highlow,
 	.conditions {
+/*
 	margin: 6px 75px;
 	clear: none;
+*/
 }
 
 	section.forecast {
@@ -34,9 +40,13 @@
 	.headertitle {
 		font-size: 25pt;
 	}
+	
+	.weather-summary {
+		flex-direction: row;
+	}
 
 	.article-photo {
-	float: left;
+/*	float: left;*/
 	max-width: 350px;
 	padding: 8px 12px;
 }
