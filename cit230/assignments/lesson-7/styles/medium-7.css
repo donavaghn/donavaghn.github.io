@@ -11,27 +11,26 @@
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	
-	nav ul.hide{
+
+	nav ul.hide {
 		display: flex;
 	}
-	
+
 	nav ul li {}
-	nav ul li a {
-	}
-	
+	nav ul li a {}
+
 	/* Grid layout for Gallery */
 	.gallery-display {
 		grid-template-columns: 1fr 1fr;
 	}
-	
+
 	.highlow,
 	.conditions {
-/*
+		/*
 	margin: 6px 75px;
 	clear: none;
 */
-}
+	}
 
 	section.forecast {
 		display: block;
@@ -40,14 +39,14 @@
 	.headertitle {
 		font-size: 25pt;
 	}
-	
+
 	.weather-summary {
 		flex-direction: row;
 	}
 
 	.article-photo {
-/*	float: left;*/
-	max-width: 350px;
-	padding: 8px 12px;
-}
+		/*	float: left;*/
+		max-width: 350px;
+		padding: 8px 12px;
+	}
 }
