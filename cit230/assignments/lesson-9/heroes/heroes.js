@@ -48,29 +48,13 @@ function showHeroes(jsonObj) {
       listItem.textContent = superPowers[j];
       myList.appendChild(listItem);
     }
-
+	  
     myArticle.appendChild(myH2);
     myArticle.appendChild(myPara1);
     myArticle.appendChild(myPara2);
     myArticle.appendChild(myPara3);
     myArticle.appendChild(myList);
-
-    section.appendChild(myArticle);
+	  
+	 section.appendChild(myArticle);
   }
 }
-
-request.open('GET', requestURL);
-request.responseType = 'text'; // now we're getting a string!
-request.send();
-
-request.onload = function() {
-  var superHeroesText = request.response; // get the string from the response
-  var superHeroes = JSON.parse(superHeroesText); // convert it to an object
-  populateHeader(superHeroes);
-  showHeroes(superHeroes);
-}
-
-var myJSON = { "name": "Chris", "age": "38" };
-myJSON
-var myString = JSON.stringify(myJSON);
-myString
