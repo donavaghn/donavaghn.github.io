@@ -19,8 +19,9 @@ request.onload = function() {
 
  	for (var i = 0; i < town.length; i++) {
 		if (i === 2) { continue }
- 		var myArticle = document.createElement('article');
+		var myArticle = document.createElement('article');
  		var myH2 = document.createElement('h2');
+		var myImage = document.createElement('img');
  		var myPara1 = document.createElement('p');
  		var myPara2 = document.createElement('p');
  		var myPara3 = document.createElement('p');
@@ -29,6 +30,15 @@ request.onload = function() {
  		var myList = document.createElement('ul');
 
  		myH2.textContent = town[i].name;
+		if (i == 0) {
+			myImage.src = "images/frank.jpg";
+		}
+		else if (i == 1) {
+			myImage.src = "images/green.jpg";
+		}
+		else {
+			myImage.src = "images/spring.jpg";
+		}
  		myPara1.textContent = 'Motto: ' + town[i].motto;
  		myPara2.textContent = 'year Founded: ' + town[i].yearFounded;
  		myPara3.textContent = 'currentPopulation ' + town[i].currentPopulation
@@ -43,6 +53,7 @@ request.onload = function() {
  		}
 
  		myArticle.appendChild(myH2);
+		myArticle.appendChild(myImage);
  		myArticle.appendChild(myPara1);
  		myArticle.appendChild(myPara2);
  		myArticle.appendChild(myPara3);

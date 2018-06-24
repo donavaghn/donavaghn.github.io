@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Weather</title>
+	<meta charset="utf-8">
+	<meta name="description" content="CIT 230 Assignment - Weather Site: Web Frontend Devolopment at BYU-Idaho.">
+
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main-9.css">
+	<link rel="stylesheet" href="styles/medium-9.css">
+	<link rel="stylesheet" href="styles/large-9.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Seaweed+Script%7cSource+Sans+Pro" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+	<header>
+		<Div class="container">
+			<picture>
+				<img src="images/headerimg-1200.jpg" srcset="images/headerimg-1200.jpg 1200w, images/headerimg-800.jpg 800w, images/headerimg-400.jpg 400w" alt="Header Image">
+			</picture>
+			<h1 class="headertitle">Venture Weather</h1>
+		</Div>
+	</header>
+
+	<nav>
+		<button onclick="toggleMenu()">&#9776;</button>
+		<ul id="primaryNav" class="hide">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="franklin-8.html">Franklin</a></li>
+			<li><a href="#">Greenville</a></li>
+			<li><a href="#">Springfield</a></li>
+			<li><a href="stormcenter.html">Storm Center</a></li>
+			<li><a class="active" href="gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h2>Franklin Weather</h2>
+		<figure>
+			Weather For Adventure
+		</figure>
+		<h3>Photo Gallery</h3>
+
+		<div class="gallery-display">
+			<div>
+				<picture>
+					<img src="images/cloudy.jpg" alt="Cloudy Photo">
+				</picture>
+				<p><b>Cloudy Day</b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et vestibulum lectus, ut euismod nunc. Cras varius nibh ut enim tristique congue. Praesent.</p>
+			</div>
+
+			<div>
+				<picture>
+					<img src="images/dry.jpg" alt="Drought Photo">
+				</picture>
+				<p><b>Drought</b><br> Nulla facilisi. Aenean vehicula ex non eros viverra, in tincidunt odio imperdiet. Integer porttitor sem ut bibendum dapibus. Donec .</p>
+			</div>
+
+			<div>
+				<picture>
+					<img src="images/lightning.jpg" alt="Lightning Photo">
+				</picture>
+				<p><b>Lightning</b><br> Aliquam libero nulla, auctor sed ligula nec, congue vehicula arcu. Morbi eget fringilla nisl. Duis eget sollicitudin mauris, luctus consectetur.</p>
+			</div>
+
+			<div>
+				<picture>
+					<img src="images/snow.jpg" alt="Snowy Photo">
+				</picture>
+				<p><b>Snow Fall</b><br> Aliquam porttitor est consequat fringilla porta. Donec sit amet semper nulla. Nulla ut consectetur tortor. </p>
+			</div>
+
+			<div>
+				<picture>
+					<img src="images/rain.jpg" alt="Rainy Photo">
+				</picture>
+				<p><b>Rainy Day</b><br> Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse tempor .</p>
+			</div>
+
+			<div>
+				<picture>
+					<img src="images/sun.jpg" alt="Sunny Photo">
+				</picture>
+				<p><b>Sunshine</b><br> Donec faucibus malesuada dolor, vitae mollis risus posuere quis. Nulla risus turpis, volutpat sed eros a, iaculis.</p>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		<section class="contact">
+			Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 Google Map
+		</section>
+		<section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
+		</section>
+	</footer>
+
+	<script src="scripts/hamburger.js"></script>
+	<script src="scripts/currentdate.js"></script>
+
+</body>
+
+</html>
