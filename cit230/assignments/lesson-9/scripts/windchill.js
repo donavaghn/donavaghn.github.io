@@ -2,7 +2,7 @@ var t;
 var s;
 var f;
 
-var requestURL = 'http://api.openweathermap.org/data/2.5/weather?zip=55333,us&APPID=df95dd903d725edb23c616eb8dc3e79a&units=imperial';
+var requestURL = '//api.openweathermap.org/data/2.5/weather?zip=55333,us&APPID=df95dd903d725edb23c616eb8dc3e79a&units=imperial';
 
  var request = new XMLHttpRequest();
 
