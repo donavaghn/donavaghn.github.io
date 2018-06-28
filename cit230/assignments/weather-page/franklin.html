@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Weather</title>
+	<meta charset="utf-8">
+	<meta name="description" content="CIT 230 Assignment - Weather Site: Web Frontend Devolopment at BYU-Idaho.">
+
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/medium.css">
+	<link rel="stylesheet" href="styles/large.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Seaweed+Script%7cSource+Sans+Pro" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+	<header>
+		<Div class="container">
+			<picture>
+				<img src="images/headerimg-1200.jpg" srcset="images/headerimg-1200.jpg 1200w, images/headerimg-800.jpg 800w, images/headerimg-400.jpg 400w" alt="Header Image">
+			</picture>
+			<h1 class="headertitle">Venture Weather</h1>
+		</Div>
+	</header>
+
+	<nav>
+		<button onclick="toggleMenu()">&#9776;</button>
+		<ul id="primaryNav" class="hide">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="franklin.html">Franklin</a></li>
+			<li><a href="#">Greenville</a></li>
+			<li><a href="#">Springfield</a></li>
+			<li><a href="stormcenter.html">Storm Center</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h2>Franklin Weather</h2>
+		<figure>
+			Weather For Adventure
+		</figure>
+		<h3>Weather Summary</h3>
+		<section class="weather-summary">
+			<div class="current">
+				<p class="temp"><span id="temp">00</span>&deg;</p>
+				<p><span id="state"></span></p>
+			</div>
+			<div>
+				<div class="highlow">
+					<p>High: <span id="high"></span>&deg;F</p>
+					<p>Low: <span id="low"></span>&deg;F</p>
+				</div>
+
+				<div class="conditions">
+					<p>Precipitation: 66%</p>
+					<p>Wind Speed: <span id="windSpeed">00</span> mph SW</p>
+					<p>Windchill: <span id="windchill">00</span>&deg;</p>
+				</div>
+			</div>
+
+			<picture>
+				<img class="weather-photo" src="images/sunnyphoto-1200.jpg" srcset="images/sunnyphoto-1200.jpg 1200w, images/sunnyphoto-800.jpg 800w, images/sunnyphoto-400.jpg 400w" alt="Sunny Photo">
+			</picture>
+		</section>
+
+		<section class="forecast">
+			<h3>Ten Day Forecast</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Day 1</th>
+						<th>Day 2</th>
+						<th>Day 3</th>
+						<th>Day 4</th>
+						<th>Day 5</th>
+						<th>Day 6</th>
+						<th>Day 7</th>
+						<th>Day 8</th>
+						<th>Day 9</th>
+						<th>Day 10</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>89&deg;F</td>
+						<td>87&deg;F</td>
+						<td>78&deg;F</td>
+						<td>75&deg;F</td>
+						<td>72&deg;F</td>
+						<td>72&deg;F</td>
+						<td>79&deg;F</td>
+						<td>83&deg;F</td>
+						<td>85&deg;F</td>
+						<td>89&deg;F</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<h3>Assignment Image</h3>
+			<picture>
+				<img class="franklin-img" src="images/franklin-notworking.jpg" srcset="images/franklin-1200.jpg 1200w, images/franklin-800.jpg 800w, images/franklin-400.jpg 400w" alt="Franklin Assignment Image">
+			</picture>
+		</section>
+
+		<article>
+			<h3>Franklin Breaks Record</h3>
+			<img class="article-photo" src="images/record-1200.jpg" srcset="images/record-1200.jpg 1200w, images/record-800.jpg 800w, images/record-400.jpg 400w" alt="Rain Photo">
+			<p class="town-article">
+				Lor sint, sunt quo iunt aspiciame repudae pe ipsandus assit hario es re et volendi tendusc iendesseque pro etur atis solorit atempor epedit di ommodis enis et ut quam ex et diciis estiatas audant ea num enimilis modi occaborit es destini enimolore eaquas im harum voluptibus vendae cus acea dolore sin et mi, tem explabo rehenieni cus aut omni ut erion niment aut qui dolut qui voluptatur, con pelentur? Eneces aut aspid exererovitem aperorerum quae digni in rero omnimpor mint, inulparchic tota voluptat. To quatiati sum fugitia tionsequi aut arum ut lia quiam nem hit quatem quoditaqui re nihic tecto tem quis ea nate quia dundit expernat lacculparum ipsumetur?
+				<br><br> Molora volorio eturehenet inimaio isqui tem ipsae verchic iaepernamus, es si aut aceptae reiunt faccus prem aperit dicae que volorit unti non nia et et eatur as aut acit, officid uta quaerum, ut qui officimaio test es eati officiumque sitaspelici conecto que id eum fugia nem sunt exped modis etur? Ga. Rum lati nonsernat aliquuntet am rem ad qui omnit qui doluptatur, et, et faccullorum rernaturibus nonsequamet utecessit, simporum, omnimet arum iunt dusaere id quis dolorum et velecea ea cuscidero blaudigenda voluptaqui tesedit ipsus.
+				<br><br> Ipiet mo int, omnihillut re pratemqui aut magnis ut ilis erum et expedit vit quamus veliti res consedionem liquidem. Nem doluptatiam quam core sim lam eati dolluptusa aut asperum esci consedit, ut audi ate laut event doloreium nobis et fugit ulpa sim quatis non cor aspicidi voluptatum rehenis dolorro coreres tiatecatem sus ex est, consequi occate quiae nonse doluptate volupisquae officae volecat umquam, tet es nam seruptia voluptatas ma nis archil ende voluptiori doluptur? Qui rectia consequis ea perum qui beaquia delita nonseni moluptas maionsequi sum quis prestiae nihilla quiae laboremquam nem il idendaerror aut eum, quam laborro vidernam, suntionsed moluptur sanimint verum accabore placeaquam que prehenet est, occus, corit anis nam faccuptaque re, tem quiam nos et, ut rate cuptibea id eium at.
+				<br><br> Axim nulparchil ipidicae vero explis magnamus vit, totaquia dolorit, inctectur, non nusande moditata voloribus re poreper orporate nonsequia eratectes volor a eriorporis ut occus expedis as eius esequia nobitaquo maximiniet ommolor escillum fuga. Laboribus eum same rerspis adi arum sit optisquidit alitas es et am que pa poruptatibus consed que doloren tiostru ptinumqui a quia vendi ad et maxim fugitatatem ea conseque non ea ea nieturestist lictam rest rem. Piscit dem facepel ignita ium, sum reperrum il ero vel molorum audiori tature reni conemquam dolupta dolupta volum, qui duciet quam, quas recuptat labor apit quis dipsus, autat fuga. Offic tem et pra con rest alibus acerae prorerrum re volenes tiusda dolor autempor rera parumqui dolendam am quiaeperum recerum aut rate saes dera essit ea arum alitatior mos modit inctem nam, velitat usciendit rem dolo ma conet assi ut laborro et eristiorit il evelia dunt moditium escitint, simillanis esendicab ipienihit eos eosti volut ea quod est aceptat iatquatur aut incillaccus dolupta sinctem peditis molorero dolendel et as et vollessunt ut aut que et late sam, sitae volo mollat haruptur minverum facerum, sum eos ducietus, estius elitatur apid unt.
+				<br><br> Otas eume doles ut aut utat quis ducit, tecae vit ma dendame niet que mil maxim et perumque prentior sit utet ligent laborati debis qui sequat.
+				<br><br> Officiunt, conecerum alignihil id ullabor sinuscitate cum et, voluptame nos ipsae. Ovitinus.
+				<br><br> Opta dolupta tiissequae labo. Ugianias velit as dignim nonecullest, nonseque venihil lateser ectias doluptatet aut ut eosant, ad evento tent.
+				<br><br> Mentorruntem ipid et magnamet odipienes ut in cuptati untium etur? Quiaest quam simenis quaspere corit ulpa doluptiam, suntum dolorem et et autem aliquo beatus moditatur? Veliamet odias aut vel molorecta dis etur, ut audiorum volupta tecepel lestemquo expliquati autemqui nis as dolorep eruptatur rectur, omniatusam sit officiis renihil imolore perumquia quo evelitiores ad quis que cumquunt.
+			</p>
+		</article>
+
+	</main>
+
+	<footer>
+		<section class="contact">
+			Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 Google Map
+		</section>
+		<section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
+		</section>
+	</footer>
+
+	<script src="scripts/hamburger.js"></script>
+	<script src="scripts/currentdate.js"></script>
+	<script src="scripts/windchill.js"></script>
+	<script src="scripts/active.js"></script>
+	
+
+</body>
+
+</html>

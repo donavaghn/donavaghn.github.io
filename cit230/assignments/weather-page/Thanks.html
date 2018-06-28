@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<title>Weather</title>
+	<meta charset="utf-8">
+	<meta name="description" content="CIT 230 Assignment - Weather Site: Web Frontend Devolopment at BYU-Idaho.">
+
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/medium.css">
+	<link rel="stylesheet" href="styles/large.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Seaweed+Script%7cSource+Sans+Pro" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+	<header>
+		<Div class="container">
+			<picture>
+				<img src="images/headerimg-1200.jpg" srcset="images/headerimg-1200.jpg 1200w, images/headerimg-800.jpg 800w, images/headerimg-400.jpg 400w" alt="Header Image">
+			</picture>
+			<h1 class="headertitle">Venture Weather</h1>
+		</Div>
+	</header>
+
+	<nav>
+		<button onclick="toggleMenu()">&#9776;</button>
+		<ul id="primaryNav" class="hide">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="franklin.html">Franklin</a></li>
+			<li><a href="#">Greenville</a></li>
+			<li><a href="#">Springfield</a></li>
+			<li><a href="stormcenter.html">Storm Center</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h2>Franklin Weather</h2>
+		<figure>
+			Weather For Adventure
+		</figure>
+		<h4>Thank You for Reporting your weather!</h4>
+		</main>
+	
+	<footer>
+		<section class="contact">
+			Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 Google Map
+		</section>
+		<section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
+		</section>
+	</footer>
+
+	<script src="scripts/hamburger.js"></script>
+	<script src="scripts/currentdate.js"></script>
+	<script src="scripts/severity.js"></script>
+	<script src="scripts/active.js"></script>
+</body>
+</html>
