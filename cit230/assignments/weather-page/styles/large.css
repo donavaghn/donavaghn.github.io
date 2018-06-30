@@ -23,5 +23,11 @@
 	
 	.articles{
 	grid-template-columns: 1fr;
+	}
+	
+	.contact, .footer-bar {
+	width: 65%;
+	
 }
 }
+

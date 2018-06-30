@@ -96,12 +96,12 @@ nav ul li a {
 }
 
 nav ul li.active {
-	background-color: #555;
+	background-color: #0b8a41;
 	color: white;
 }
 
 nav ul li:hover:not(.active) {
-	background-color: #0b8a41;
+	background-color: #555;
 	color: white;
 }
 
@@ -182,7 +182,7 @@ main figure img {}
 
 footer {
 	background-color: #f1f1f1;
-	padding: 10px;
+	padding: 10px 0px;
 }
 
 .headertitle {
@@ -225,7 +225,9 @@ footer {
 
 .contact,
 .footer-bar {
-	margin: 4px;
+	width: 75%;
+	max-width: 900px;
+	margin: 4px auto;
 }
 
 .article-photo {
@@ -246,4 +248,5 @@ footer {
 	width: 100%;
 	border-radius: 5px;
 }
+
 

@@ -2,7 +2,7 @@ var t;
 var s;
 var f;
 
-var requestURL = '//api.openweathermap.org/data/2.5/weather?zip=55333,us&APPID=df95dd903d725edb23c616eb8dc3e79a&units=imperial';
+var requestURL = '//api.openweathermap.org/data/2.5/weather?zip=65619,us&APPID=df95dd903d725edb23c616eb8dc3e79a&units=imperial';
 
  var request = new XMLHttpRequest();
 
@@ -15,6 +15,7 @@ request.onload = function() {
   var townFranklin = request.response;
 	showFranklin(townFranklin);
 }
+
 function showFranklin(jsonObj) {
  	var main = jsonObj['main'];
 	var wind = jsonObj['wind'];
