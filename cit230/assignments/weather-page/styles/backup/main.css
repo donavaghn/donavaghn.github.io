@@ -18,6 +18,10 @@ label {
 	min-width: 160px;
 }
 
+.radio {
+	min-width: 0px;
+}
+
 input, select {
 	min-width: 200px;
 	margin: 12px 0px;
@@ -42,7 +46,9 @@ header {
 	font-family: 'Seaweed Script', cursive;
 }
 
-header h1 {}
+header h1 {
+/*		float: left;*/
+}
 
 header img {
 	width: 100%;
@@ -110,6 +116,8 @@ main {
 	margin: 0 auto;
 }
 
+/* Grid layout for gallery */
+
 main img {
 	width: 100%;
 	border-radius: 5px;
@@ -119,6 +127,19 @@ main img {
 div picture img:hover {
 	box-shadow: 5px 5px 10px gray;
 	opacity: .9;
+}
+
+.gallery-display, .city_display {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 10px;
+}
+
+.articles{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
 main h2 {
@@ -162,26 +183,6 @@ main figure img {}
 footer {
 	background-color: #f1f1f1;
 	padding: 10px 0px;
-	margin: 60px 0px 0px 0px;
-}
-
-
-/*styling by class*/
-.radio {
-	min-width: 0px;
-}
-
-.gallery-display, .city_display {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-column-gap: 10px;
-}
-
-.articles{
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr;
 }
 
 .headertitle {
@@ -192,6 +193,7 @@ footer {
 }
 
 .weather-photo {
+	/*	float: right;*/
 	width: 150px;
 	border-radius: 25px;
 }
@@ -215,6 +217,10 @@ footer {
 
 .highlow,
 .conditions {
+	/*
+	margin: 6px 0px;
+	clear: both;
+*/
 }
 
 .contact,
@@ -233,16 +239,14 @@ footer {
 	align-content: center;
 }
 
-.city_display img {
-	width: 100%;
-	border-radius: 5px;
-}
-
-
-/*styling by id*/
 #ratingvalue {
 	font-size: 16pt;
 	margin: 8px;
+}
+
+.city_display img {
+	width: 100%;
+	border-radius: 5px;
 }
 
 

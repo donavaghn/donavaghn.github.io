@@ -67,8 +67,3 @@ document.getElementById("state").innerHTML = state;
 document.getElementById("wind_direction"). innerHTML = direction;
 document.getElementById("humidity").innerHTML = humidity;
  }
-
-
-
-
-

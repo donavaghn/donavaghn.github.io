@@ -19,25 +19,33 @@
 	nav ul li {}
 	nav ul li a {}
 
+	/* Grid layout for Gallery */
+	.gallery-display {
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.city_display {
+		grid-template-columns:1fr;
+	}
+	
+	.articles{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 45px;
+}
+
+	.highlow,
+	.conditions {
+		/*
+	margin: 6px 75px;
+	clear: none;
+*/
+	}
+
 	section.forecast {
 		display: block;
 	}
-
-	
-/*	styling by class*/
-	.city_display {
-		grid-template-columns: 1fr;
-	}
-
-	.articles {
-		width: 100%;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-column-gap: 45px;
-	}
-
-	.highlow,
-	.conditions {}
 
 	.headertitle {
 		font-size: 25pt;
@@ -48,11 +56,8 @@
 	}
 
 	.article-photo {
+		/*	float: left;*/
 		max-width: 350px;
 		padding: 8px 12px;
-	}
-
-	.gallery-display {
-		grid-template-columns: 1fr 1fr;
 	}
 }
