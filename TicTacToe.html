@@ -19,6 +19,7 @@
         if((gameBoardX & masks[i]) == masks[i]){
           won = true
           document.getElementById("result_display").innerHTML = "X wins"
+          document.getElementById("player1").style.opacity = 1
           break
         }
       }
@@ -29,31 +30,40 @@
         if((gameBoardO & masks[i]) == masks[i]){
           won = true
           document.getElementById("result_display").innerHTML = "O wins"
+          document.getElementById("player2").style.opacity = 1
           break
         }
       }
     }
     
-    function updateAndCheck(anIndex,theButtonClicked){
+    function updateAndCheck(anIndex,theButtonClicked){     
       var clickCheck = Math.pow(2,anIndex)
       if((buttonsClicked & clickCheck) != clickCheck && won == false){
         if(playerIsX){
           playerIsX = false
-          gameBoardX += Math.pow(2,anIndex)
+          gameBoardX += Math.pow(2,anIndex) 
           theButtonClicked.innerHTML = "X"
           checkGameBoardX()
+      //    document.body.style.backgroundColor = "blue"
           }
         else{
           playerIsX = true
           gameBoardO  += Math.pow(2,anIndex)
           theButtonClicked.innerHTML = "O"
           checkGameBoardO()
+      //    document.body.style.backgroundColor = "red"
         }  
         buttonsClicked += Math.pow(2,anIndex)
-      }  
+      } 
+      if((buttonsClicked & 511) == 511){
+        document.getElementById("result_display").innerHTML = "It's a Draw!"
+      //  document.body.style.backgroundColor = "black"
+      }
     }
 
     function reset(){
+    //  document.body.style.backgroundColor = "red"
+
       gameBoardX = 0
       gameBoardO = 0
       playerIsX = true
@@ -61,6 +71,8 @@
       won = false
 
       document.getElementById("result_display").innerHTML = ""
+		document.getElementById("player1").style.opacity = "0.0"
+		document.getElementById("player2").style.opacity = "0.0"
 
       var theButtons = document.getElementsByTagName("button")
 
@@ -76,11 +88,33 @@
 
   <style>
 
+    body{
+      transition: 3s;
+    }
+
   	button{
       	color:;
         background-color:;
         height: 65px;
         width: 65px;
+    }
+
+    #player1{
+      opacity:0.0;
+      height:400px;
+      width:600px;
+      position:absolute;
+      left:250px;
+      top:250px;
+    }
+
+     #player2{
+      opacity:0.0;
+      height:400px;
+      width:600px;
+       position:absolute;
+      left:250px;
+      top:250px;
     }
 
   </style>
@@ -108,5 +142,18 @@
     <button id="resetButton" onclick="reset()">Reset</button>
   </section>
 	 <section id="result_display"></section>
+  <section>
+   <img src="player1.png" id="player1">
+  </section>
+  <section>
+   <img src="player2.png" id="player2">
+  </section>
+  <img src="board.png" style="position:absolute;top:1002px;left:1000;"></img>
+  <img src="x.png" style="position:absolute;top:1000px;left:1015px;"></img>
+  <img src="x.png" style="position:absolute;top:1175px;left:1015px;"></img>
+  <img src="x.png" style="position:absolute;top:1350px;left:1015px;"></img>
+  <img src="x.png" style="position:absolute;top:1000px;left:1190px;"></img>
+  <img src="x.png" style="position:absolute;top:1175px;left:1190px;"></img>
+  <img src="x.png" style="position:absolute;top:1350px;left:1190px;"" onclick="reset()"></img>
 </body>
 </html>
