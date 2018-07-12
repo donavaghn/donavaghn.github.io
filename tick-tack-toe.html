@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <script>
+
+    var playerIsX = true
+    var won = false
+    
+    var gameBoardX = 0
+    var gameBoardO = 0
+
+    var buttonsClicked = 0
+
+    var masks=[7,56,440,73,146,292,273,84]
+
+    function checkGameBoardX(){
+      for(var i = 0; i<masks.length; i++){
+        if((gameBoardX & masks[i]) == masks[i]){
+          won = true
+          document.getElementById("result_display").innerHTML = "X wins"
+          break
+        }
+      }
+    }
+
+    function checkGameBoardO(){
+      for(var i = 0; i<masks.length; i++){
+        if((gameBoardO & masks[i]) == masks[i]){
+          won = true
+          document.getElementById("result_display").innerHTML = "O wins"
+          break
+        }
+      }
+    }
+    
+    function updateAndCheck(anIndex,theButtonClicked){
+      var clickCheck = Math.pow(2,anIndex)
+      if((buttonsClicked & clickCheck) != clickCheck && won == false){
+        if(playerIsX){
+          playerIsX = false
+          gameBoardX += Math.pow(2,anIndex)
+          theButtonClicked.innerHTML = "X"
+          checkGameBoardX()
+          }
+        else{
+          playerIsX = true
+          gameBoardO  += Math.pow(2,anIndex)
+          theButtonClicked.innerHTML = "O"
+          checkGameBoardO()
+        }  
+        buttonsClicked += Math.pow(2,anIndex)
+      }  
+    }
+
+    function reset(){
+      gameBoardX = 0
+      gameBoardO = 0
+      playerIsX = true
+      buttonsClicked = 0
+      won = false
+
+      document.getElementById("result_display").innerHTML = ""
+
+      var theButtons = document.getElementsByTagName("button")
+
+      for(var i = 0; i<theButtons.length; i++){
+       var aButton = theButtons[i]
+        if(aButton.id != "resetButton"){
+          aButton.innerHTML = "_"
+        }
+      }
+    }
+
+  </script>
+
+  <style>
+
+  	button{
+      	color:;
+        background-color:;
+        height: 65px;
+        width: 65px;
+    }
+
+  </style>
+</head>
+
+<body>
+	<section>
+	</section>
+	<section>
+		<button onclick="updateAndCheck(0,this)">_</button>
+		<button onclick="updateAndCheck(1,this)">_</button>
+		<button onclick="updateAndCheck(2,this)">_</button>
+	</section>
+	<section>
+		<button onclick="updateAndCheck(3,this)">_</button>
+		<button onclick="updateAndCheck(4,this)">_</button>
+		<button onclick="updateAndCheck(5,this)">_</button>
+	</section>
+	<section>
+		<button onclick="updateAndCheck(6,this)">_</button>
+		<button onclick="updateAndCheck(7,this)">_</button>
+		<button onclick="updateAndCheck(8,this)">_</button>
+	</section>
+  <section>
+    <button id="resetButton" onclick="reset()">Reset</button>
+  </section>
+	 <section id="result_display"></section>
+</body>
+</html>
