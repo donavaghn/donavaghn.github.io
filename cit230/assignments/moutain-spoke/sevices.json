@@ -1,0 +1,12 @@
+{
+	"services" :[
+		{
+		"name" : "drive frame clean", 
+		"price" : 32.00
+		},
+		{
+		"name" : "minor tune",
+		"price" : 40.00,	
+		}
+	]
+}
