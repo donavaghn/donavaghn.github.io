@@ -31,14 +31,12 @@ ul#primaryNav li:hover:not(.activeNav) {
 
 #contact {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 }
 
-/*
-nav ul.hide {
+nav ul.hideNav {
 	display: none;
 }
-*/
 
 /*	General Styling*/
 
@@ -77,7 +75,7 @@ input, select {
 }
 
 main {
-	width: 75%;
+	width: 96%;
 	margin: 0px auto;
 }
 

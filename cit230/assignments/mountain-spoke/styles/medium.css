@@ -1,4 +1,8 @@
 @media only screen and (min-width: 37.5em) {
+	
+	main {
+	width: 75%;
+}
 
 	/*	Navigation*/
 	nav button {
@@ -74,3 +78,7 @@ nav ul {
 #articles {
 	grid-template-columns: 1fr 1fr;
 }
+	
+#contact {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
