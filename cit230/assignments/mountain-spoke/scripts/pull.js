@@ -1,6 +1,6 @@
 var table = document.querySelector('table');
 
-var requestURL = 'json-data/file.json';
+var requestURL = 'https://donavaghn.github.io/cit230/assignments/mountain-spoke/scripts/json-data/services.json';
 
 var request = new XMLHttpRequest();
 
@@ -15,9 +15,9 @@ request.onload = function() {
 }
 
 function showTable(jsonObj) {
-   var serve = jsonObj['things'];
+   var serve = jsonObj['services'];
      
-   for (var i = 0; i < services.length; i++) {
+   for (var i = 0; i < serve.length; i++) {
 	 var row = document.createElement('tr');
     var name = document.createElement('td');
 	 var price = document.createElement('td');
