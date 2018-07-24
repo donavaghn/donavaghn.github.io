@@ -7,44 +7,36 @@
 
 <body>
 
-	<header w3-include-html="modules/header.html">
-	</header>
+	<header w3-include-html="modules/header.html"></header>
 	
-	<nav>
-<button onclick="toggleMenu()">&#9776;</button>
-		<ul id="primaryNav" class="hide">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Adventure Tours</a></li>
-			<li class="activeNav"><a href="#">Events</a></li>
-			<li><a href="#">Sales</a></li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</nav>
+	<nav w3-include-html="modules/nav.html"></nav>
 
 	<main>
-		<p>About buying a bike through the mountain spoke</p>
-		<p>about us</p>
+		<h1><a class="call-to-action" href="events.html">Sign Up to bike the contenental divide</a></h1>
 		
+		<p>The upcoming contenental divide bike trip is one you won't want to miss out on. special preparations have been made t make sure everyone has a safe enjoyable ride. We will be riding through some of the most beautiful scenes you have ever seen.</p>
+		
+		<h1>Bicycles Available</h1>
+		<h2>Here are some of our available Bikes. Go to the sales page for information.</h2>
 		<!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="images/slider/bike-1.jpg" style="width:100%">
+    <img src="images/diamonback.png" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="images/slider/bike-2.jpg" style="width:100%">
+    <img src="images/co-op.png" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="images/slider/bike-3.jpg" style="width:100%">
+    <img src="images/cannondale.png" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
 
@@ -60,11 +52,28 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
+
+<div id="articles">
+
+<article>
+<img src="images/corbets.png" alt="Descent of corbet's couloir"><p>Anyone who has ever skied or snowboarded Jackson Hole knows just how nerve-racking it can be to send it into the infamous Corbet's Couloir, even in the best of conditions. Doing it in icy conditions on mountain bikes is nothing short of insane, and that's exactly what Cam McCaul and Casey Brown did in TGR's latest film, Rogue Elements.
+
+There's a litany of other adjectives you could prescribe to the lines McCaul and Brown threw down - Sketchy, heavy, and borderline suicidal all come to mind - but ultimately, the end result was jaw-dropping.</p></article>
+<!--https://www.tetongravity.com/video/bike/casey-brown-and-cam-mccaul-send-snowy-corbets-on-mountain-bikes-->
+
+<article><img src="images/nate_hills_crash.png" alt="Nate Hills"><p>Mountain Biker Nate Hills was taking advantage of the epic fall riding conditions near Crested Butte, CO when he happened to film his riding buddy and fellow Yeti racer Tom Sampson go down hard. Halfway down the epic Doctor’s Park trail, in a super-flowy section commonly ridden at speeds over 30 mph, Sampson hit a freshly downed tree and went straight over the bars. Luckily, he walked away with just a broken wrist and elbow from a crash that could have been much, much worse.</p></article>
+<!--https://www.tetongravity.com/video/bike/nate-hills-shares-the-worst-crash-hes-ever-filmed-->
+
+<article><img src="images/matt_jones.png" alt="Matt Jones"><p>Ever heard of slopestyle mountain biker Matt Jones? Well, now you have. Jones, a young English rider is well on his way to give big names like Semenuk and Genon a run for their money. His new short film, Frames of Mind, looks into his mind as he visualizes and then executes next-level tricks, most of these don't even have names. See for yourself, this is creativity at its finest.</p>
+</article>
+<!--https://www.tetongravity.com/video/bike/stop-what-you-are-doing-and-watch-this-mtb-video-immediately-->
+</div>
 	</main>
 
-	<footer w3-include-html="modules/footer.html">
-	</footer>
+	<footer w3-include-html="modules/footer.html"></footer>
 
+
+	<script src="scripts/date.js"></script>
 	<script src="scripts/active.js"></script>
 	<script src="scripts/slider.js"></script>
 	<script src="scripts/w3.js"></script>

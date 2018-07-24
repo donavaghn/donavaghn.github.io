@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head w3-include-html="modules/head.html">
+	<title>Events | The Mountain Spoke</title>
+</head>
+
+<body>
+
+	<header w3-include-html="modules/header.html">
+	</header>
+	
+	<nav w3-include-html="modules/nav.html"></nav>
+
+	<main>
+	<h1>Featured Event</h1>
+	<h1>Cycling the Continental Divide</h1>
+	<div id="featuredEvent">
+	<div>
+	<img src="images/divide.jpg" alt="Cycling">
+	</div>
+	<div id="signup">
+	<h2>Sign Up!</h2>
+	<form action="thanks.html" method="get" display="float">
+
+		<label for="fullName">Full Name:</label>
+		<input type="text" title="Must be at least 5 characters" id="fullname" name="fullname" pattern="[A-Za-z- ]{5,}" required><br>
+
+		<label for="email">Email</label>
+		<input type="email" title="Email" id="email" name="email" placeholder="name@email.com"><br>
+
+		<label for="phonenumber" name="phonenumber">Phone Number</label>
+		<input type="tel" required><br>
+
+		<label for="home">Home State</label>
+		<input type="text" name="home" required><br>
+
+		<label for="dateofbirth">Date of Birth</label>
+		<input type="date" name="dateofbirth"><br>
+
+		<label for="additionalinformation">special Accommodations Needed or Additional Comments</label><br>
+		<textarea name="info" id="info" cols="30" rows="10"></textarea><br>
+
+		<input id="submit" type="submit" value="Submit"><br>
+		</form>
+		</div>
+</div>
+	</main>
+
+	<footer w3-include-html="modules/footer.html"></footer>
+
+
+	<script src="scripts/date.js"></script>
+	<script src="scripts/active.js"></script>
+	<script src="scripts/slider.js"></script>
+	<script src="scripts/w3.js"></script>
+	<script src="scripts/includehtml.js"></script>
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	
+</body>
+
+</html>
