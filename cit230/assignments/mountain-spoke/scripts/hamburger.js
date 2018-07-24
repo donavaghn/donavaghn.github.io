@@ -1,3 +1,3 @@
 function toggleMenu() {
-	document.getElementById("primaryNav").toggleClass("hideNav");
+	$("#primaryNav").toggleClass("hideNav");
 }

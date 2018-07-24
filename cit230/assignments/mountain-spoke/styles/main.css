@@ -11,6 +11,14 @@ ul#primaryNav li {
 	font-size: 15pt;
 }
 
+#adventure {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+#adventure div img {
+	width: 100%;
+}
 /*
 nav ul li a {
 	display: block;
@@ -20,17 +28,13 @@ nav ul li a {
 }
 */
 
-ul#primaryNav li.activeNav {
-	background-color: #de9e36;
-	color: white;
-	height: 70px;
+#primaryNav {
+	
+	list-style: none;
 }
 
-ul#primaryNav li:hover:not(.activeNav) {
-	background-color: #ef1010;
-	color: white;
-	height: 52px;
-	transition: 0.5s;
+#primaryNav a {
+	text-decoration: none;
 }
 
 /* other */
