@@ -1,12 +1,20 @@
 {
 	"services" : [
 		{
-		"name" : "drive frame clean", 
-		"price" : 32.00
+			"name" : "Basic Service Package",
+			"price" : "45.00"
 		},
 		{
-		"name" : "minor tune",
-		"price" : 40.00,	
+			"name" : "Mobile Bike Tune Up",
+			"price" : "69.00"
+		},
+		{
+			"name" : "Flat Repair",
+			"price" : "7.00"
+		},
+		{
+			"name" : "Mobile Bike Overhaul",
+			"price" : "185.00"
 		}
 	]
 }

@@ -1,5 +1,11 @@
 /* All Sizes */
 
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
 ul#primaryNav li {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 15pt;
@@ -77,6 +83,7 @@ input, select {
 main {
 	width: 96%;
 	margin: 0px auto;
+	flex: 1;
 }
 
 footer {
