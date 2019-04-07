@@ -54,16 +54,13 @@ ol {
 
 ul.links {
 	list-style: square;
+	line-height: 45px;
 }
 
 ul.links li a {
 	color: darkblue;
 	text-decoration: none;
 	font-size: 18pt;
-}
-
-ul.link li {
-	margin: 2000px;
 }
 
 ol li {
