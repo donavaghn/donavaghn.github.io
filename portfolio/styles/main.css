@@ -33,16 +33,16 @@ h2 {
 	margin: 45px;
 }
 
+h3 {
+	padding: 42px 0px 15px 0px;
+
+}
+
 p {
 	margin: 2px;
 	padding: 0px 0px 20px 0px;
 	line-height: 28px;
 	font-size: 13pt;
-}
-
-h3 {
-	padding: 42px 0px 15px 0px;
-
 }
 
 ol {
@@ -72,11 +72,13 @@ ol li {
 
 nav {
 	width: 100%;
-	background-color: #A9A9A9;
+/*	background-color: #A9A9A9;*/
+	background-image: linear-gradient(lightgrey, grey)
+
 }
 
 nav button {
-	background-color: darkgrey;
+	background-color: transparent;
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -86,7 +88,7 @@ nav button {
 }
 
 nav button:hover {
-	background-color: #0b8a41;
+/*	background-color: #0b8a41;*/
 }
 
 nav ul {
@@ -96,7 +98,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background-color: #A9A9A9;
+/*	background-color: #A9A9A9;*/
 }
 
 nav ul li {
@@ -187,6 +189,13 @@ overimg {
 	margin: 5px 0px 20px 0px;
 }
 
+.righto {
+	width: 100%;
+	float: right;
+	margin: 5px 0px 20px 0px;
+	border: 1px solid Black;
+}
+
 .left {
 	width: 100%;
 	float: left;
@@ -205,7 +214,20 @@ overimg {
 	margin: 5px 0px 20px 0px;
 }
 
+.doubleright {
+	display: grid;
+	grid-column-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	margin: 5px 0px 20px 25px;
+}
+
 .double img {
+	width: 100%;
+	margin: 5px 0px 5px 0px;
+}
+
+
+.doubleright img {
 	width: 100%;
 	margin: 5px 0px 5px 0px;
 }
@@ -222,6 +244,8 @@ overimg {
 	margin: 5px 0px 5px 0px;
 }
 
+
+
 .quadruple {
 	display: grid;
 	grid-column-gap: 10px;
@@ -234,10 +258,102 @@ overimg {
 	margin: 5px 0px 5px 0px;
 }
 
+.outline {
+	border: 1px solid Black;
+}
+
+/*Slide Show ------------------------------- */
+
+.mySlides {
+	display: none;
+	width: 100%;
+}
+
+.w3-content {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	max-width: 980px;
+}
+
+w3-button { 
+	border: none;
+	display: inline-block;
+	padding: 16px 32px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: White;
+	background-color: Black;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.w3-button:hover { 
+	color: #000!important;
+	background-color: #ccc!important;
+}
+
+/*
+.w3-button:hover {
+	color: #fff!important;
+	background-color: #000!important;
+}
+*/
+
+.w3-display-left {
+	border: 0;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(0%,-50%);
+	-ms-transform: translate(-0%,-50%);
+	
+	border: none;
+	display: inline-block;
+	padding: 16px 32px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: White;
+	background-color: Black;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.w3-display-right {
+	border: 0;
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(0%,-50%);
+	-ms-transform: translate(0%,-50%);
+	
+	border: none;
+	display: inline-block;
+	padding: 16px 32px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: White;
+	background-color: Black;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+
 /* Other Classes ----------------------------- */
 
 .thin {
 	max-width: 900px;
+	margin: 25px auto 100px auto;
+}
+
+.small {
+	max-width: 500px;
 	margin: auto;
 }
 
@@ -261,7 +377,7 @@ overimg {
 	nav ul {
 		width: auto;
 		overflow: hidden;
-		background-color: darkgrey;
+/*		background-color: darkgrey;*/
 		flex-direction: row;
 		justify-content: space-around;
 	}
@@ -282,6 +398,11 @@ overimg {
 	.double {
 		grid-template-columns: 1fr 1fr;
 	}
+	
+	.doubleright {
+	width: 50%;
+	float: right;
+}
 
 	.triple {
 		grid-template-columns: 1fr 1fr 1fr;
@@ -298,6 +419,11 @@ overimg {
 	}
 
 	.right {
+		width: 50%;
+		margin: 5px 0px 20px 20px;
+	}
+	
+	.righto {
 		width: 50%;
 		margin: 5px 0px 20px 20px;
 	}
