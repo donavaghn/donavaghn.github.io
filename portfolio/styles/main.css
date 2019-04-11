@@ -25,16 +25,16 @@ h1 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 28pt;
 	text-align: center;
-	margin-bottom: 0px;
 	margin: 45px;
+	margin-top: 65px;
 }
 
 h2 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 28pt;
 	text-align: center;
-	margin-bottom: 0px;
 	margin: 45px;
+	margin-top: 65px;
 }
 
 h3 {
@@ -186,6 +186,11 @@ overimg {
 }
 
 /* Images in Articles ------------------------ */
+
+figcaption {
+	font-size: 10pt;
+	font-weight: 600;
+}
 
 .right {
 	width: 100%;
