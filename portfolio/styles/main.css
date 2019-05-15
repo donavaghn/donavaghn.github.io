@@ -278,6 +278,21 @@ figcaption {
 	width: 100%;
 }
 
+.mySlides1 {
+	display: none;
+	width: 100%;
+}
+
+.mySlides2 {
+	display: none;
+	width: 100%;
+}
+
+.mySlides3 {
+	display: none;
+	width: 100%;
+}
+
 .w3-content {
 	margin-left: auto;
 	margin-right: auto;
